@@ -58,3 +58,5 @@ function! s:get_ms_since(time)
   return str2nr(cost[0])*1000 + str2nr(cost[1])/1000.0
 endfunction
 
+let &cpo=s:save_cpo
+unlet s:save_cpo
